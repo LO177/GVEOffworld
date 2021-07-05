@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\OffworldInvader.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{A66AB439-73B8-4839-9F3A-446976638E96}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\OffworldInvader.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\OffworldInvaderEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{614F30FF-C868-4E07-BF71-64B329C08EE6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\OffworldInvader">
+      <UniqueIdentifier>{E01047B5-FA2F-4294-95CB-AD412F975867}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\OffworldInvader\OffworldInvader.Build.cs">
+      <Filter>Source\OffworldInvader</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\OffworldInvader\OffworldInvader.cpp">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OffworldInvader\OffworldInvader.h">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\OffworldInvader\OffworldInvaderGameMode.cpp">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OffworldInvader\OffworldInvaderGameMode.h">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\OffworldInvader\OffworldInvaderPawn.cpp">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OffworldInvader\OffworldInvaderPawn.h">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

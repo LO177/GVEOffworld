@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "OffworldInvader",
+			"Path": "C:\\Users\\User\\Desktop\\TempFolder\\GVE\\Offworld JamProject\\OffworldJam\\OffworldInvader\\GVEOffworld\\OffworldInvader\\Source\\OffworldInvader.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "OffworldInvaderEditor",
+			"Path": "C:\\Users\\User\\Desktop\\TempFolder\\GVE\\Offworld JamProject\\OffworldJam\\OffworldInvader\\GVEOffworld\\OffworldInvader\\Source\\OffworldInvaderEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
