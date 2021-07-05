@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "OffworldInvader",
-			"Path": "C:\\Users\\User\\Desktop\\TempFolder\\GVE\\Offworld JamProject\\OffworldJam\\OffworldInvader\\GVEOffworld\\OffworldInvader\\Source\\OffworldInvader.Target.cs",
+			"Path": "C:\\Users\\k019919i\\Documents\\GitHub\\GVEOffworld\\OffworldInvader\\Source\\OffworldInvader.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "OffworldInvaderEditor",
-			"Path": "C:\\Users\\User\\Desktop\\TempFolder\\GVE\\Offworld JamProject\\OffworldJam\\OffworldInvader\\GVEOffworld\\OffworldInvader\\Source\\OffworldInvaderEditor.Target.cs",
+			"Path": "C:\\Users\\k019919i\\Documents\\GitHub\\GVEOffworld\\OffworldInvader\\Source\\OffworldInvaderEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
