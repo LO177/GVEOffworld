@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeOffworldInvader_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xA3EE817A,
+				0x6AB343E9,
 				0x1EDE59E8,
 				METADATA_PARAMS(nullptr, 0)
 			};

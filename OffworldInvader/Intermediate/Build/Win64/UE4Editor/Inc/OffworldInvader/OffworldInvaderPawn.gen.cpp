@@ -62,6 +62,10 @@ void EmptyLinkFunctionForGeneratedCodeOffworldInvaderPawn() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlaneMesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlaneMesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RootMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_RootMesh;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -146,6 +150,15 @@ void EmptyLinkFunctionForGeneratedCodeOffworldInvaderPawn() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_PlaneMesh = { "PlaneMesh", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AOffworldInvaderPawn, PlaneMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_PlaneMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_PlaneMesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_RootMesh_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Mesh" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "OffworldInvaderPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_RootMesh = { "RootMesh", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AOffworldInvaderPawn, RootMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_RootMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_RootMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AOffworldInvaderPawn_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_MinSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_MaxSpeed,
@@ -154,6 +167,7 @@ void EmptyLinkFunctionForGeneratedCodeOffworldInvaderPawn() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_Camera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_SpringArm,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_PlaneMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOffworldInvaderPawn_Statics::NewProp_RootMesh,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AOffworldInvaderPawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AOffworldInvaderPawn>::IsAbstract,
@@ -182,7 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeOffworldInvaderPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AOffworldInvaderPawn, 3496339995);
+	IMPLEMENT_CLASS(AOffworldInvaderPawn, 3334071153);
 	template<> OFFWORLDINVADER_API UClass* StaticClass<AOffworldInvaderPawn>()
 	{
 		return AOffworldInvaderPawn::StaticClass();

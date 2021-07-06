@@ -1,0 +1,879 @@
+﻿Log file open, 07/06/21 15:21:50
+LogInit: Display: Running engine for game: OffworldInvader
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 1.189799
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderLink
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2004) (), CPU: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, GPU: Intel(R) HD Graphics 630
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.07.06-14.21.51:973][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.07.06-14.21.51:973][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Engine.ini]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Engine.ini]
+[2021.07.06-14.21.51:975][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Engine.ini]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Engine.ini]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.07.06-14.21.51:975][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Engine.ini]
+[2021.07.06-14.21.51:975][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Engine.ini]
+[2021.07.06-14.21.51:983][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.07.06-14.21.51:983][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.07.06-14.21.51:984][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.07.06-14.21.51:985][  0]LogInit: Selected Device Profile: [Windows]
+[2021.07.06-14.21.51:985][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.07.06-14.21.51:987][  0]LogHAL: Display: Platform has ~ 16 GB [17061756928 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.07.06-14.21.51:988][  0]LogInit: Going up to parent DeviceProfile []
+[2021.07.06-14.21.51:988][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.07.06-14.21.51:988][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:988][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Scalability.ini]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.07.06-14.21.51:989][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.07.06-14.21.51:991][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.07.06-14.21.51:991][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.07.06-14.21.51:991][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.07.06-14.21.51:991][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Config/Windows/Engine.ini]
+[2021.07.06-14.21.51:992][  0]LogInit: Computer: DESKTOP-1846E27
+[2021.07.06-14.21.51:992][  0]LogInit: User: User
+[2021.07.06-14.21.51:992][  0]LogInit: CPU Page size=4096, Cores=4
+[2021.07.06-14.21.51:992][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.07.06-14.21.51:992][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.07.06-14.21.51:992][  0]LogMemory: Platform Memory Stats for Windows
+[2021.07.06-14.21.51:992][  0]LogMemory: Process Physical Memory: 115.46 MB used, 115.46 MB peak
+[2021.07.06-14.21.51:992][  0]LogMemory: Process Virtual Memory: 98.09 MB used, 98.09 MB peak
+[2021.07.06-14.21.51:992][  0]LogMemory: Physical Memory: 2634.44 MB used,  13636.92 MB free, 16271.36 MB total
+[2021.07.06-14.21.51:992][  0]LogMemory: Virtual Memory: 5146.93 MB used,  134212584.00 MB free, 134217728.00 MB total
+[2021.07.06-14.21.51:999][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.07.06-14.21.52:377][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.07.06-14.21.52:379][  0]LogInit: Using OS detected language (en-GB).
+[2021.07.06-14.21.52:379][  0]LogInit: Using OS detected locale (en-GB).
+[2021.07.06-14.21.52:402][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2021.07.06-14.21.52:725][  0]LogInit: Setting process to per monitor DPI aware
+[2021.07.06-14.21.52:834][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.07.06-14.21.52:834][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.07.06-14.21.55:960][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.07.06-14.21.55:960][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.07.06-14.21.55:960][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.07.06-14.21.55:960][  0]LogD3D11RHI: D3D11 adapters:
+[2021.07.06-14.21.56:482][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
+[2021.07.06-14.21.56:482][  0]LogD3D11RHI:       2010/0/8135 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.07.06-14.21.56:493][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2021.07.06-14.21.56:493][  0]LogD3D11RHI:       128/0/8135 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2021.07.06-14.21.56:496][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.07.06-14.21.56:496][  0]LogD3D11RHI:       0/0/8135 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.07.06-14.21.56:496][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.07.06-14.21.56:502][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.07.06-14.21.56:502][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
+[2021.07.06-14.21.56:502][  0]LogWindows: EnumDisplayDevices:
+[2021.07.06-14.21.56:502][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
+[2021.07.06-14.21.56:502][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2021.07.06-14.21.56:502][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2021.07.06-14.21.56:503][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2021.07.06-14.21.56:503][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
+[2021.07.06-14.21.56:503][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2021.07.06-14.21.56:503][  0]LogD3D11RHI:      Driver Date: Unknown
+[2021.07.06-14.21.56:504][  0]LogRHI: Texture pool is 1407 MB (70% of 2010 MB)
+[2021.07.06-14.21.56:590][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.07.06-14.21.56:591][  0]LogD3D11RHI: Async texture creation enabled
+[2021.07.06-14.21.56:632][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.07.06-14.21.57:044][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.07.06-14.21.57:074][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.07.06-14.21.57:114][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.07.06-14.21.57:114][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.07.06-14.21.57:130][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.07.06-14.21.57:145][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.07.06-14.21.57:159][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.07.06-14.21.57:173][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.07.06-14.21.57:188][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.07.06-14.21.57:202][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.07.06-14.21.57:215][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.07.06-14.21.57:251][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.07.06-14.21.57:251][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.07.06-14.21.57:271][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.07.06-14.21.57:271][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.07.06-14.21.57:284][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.07.06-14.21.57:297][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.07.06-14.21.57:310][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.07.06-14.21.57:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.07.06-14.21.57:323][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.07.06-14.21.57:376][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.07.06-14.21.57:586][  0]LogShaderCompilers: Guid format shader working directory is -82 characters bigger than the processId version (../../../../../../Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Intermediate/Shaders/WorkingDirectory/8348/).
+[2021.07.06-14.21.57:586][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/User/AppData/Local/Temp/UnrealShaderWorkingDir/FBAF3A27422DC7C7611B909779F0000F/'.
+[2021.07.06-14.21.57:588][  0]LogXGEController: Cleaning working directory: C:/Users/User/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.07.06-14.21.57:588][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.07.06-14.21.57:588][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.07.06-14.21.57:588][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.07.06-14.22.01:231][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.07.06-14.22.01:428][  0]LogDerivedDataCache: Loaded boot cache 0.20s 76MB C:/Users/User/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.07.06-14.22.01:428][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/User/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.07.06-14.22.01:429][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.07.06-14.22.01:429][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.07.06-14.22.01:429][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.07.06-14.22.01:429][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.07.06-14.22.01:451][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.07.06-14.22.01:451][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.07.06-14.22.01:451][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.07.06-14.22.01:454][  0]LogDerivedDataCache: Using Local data cache path C:/Users/User/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.07.06-14.22.01:454][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.07.06-14.22.01:454][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.07.06-14.22.01:520][  0]LogSlate: Using FreeType 2.10.0
+[2021.07.06-14.22.01:538][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.07.06-14.22.01:591][  0]LogAssetRegistry: FAssetRegistry took 0.0068 seconds to start up
+[2021.07.06-14.22.01:986][  0]LogInit: Selected Device Profile: [Windows]
+[2021.07.06-14.22.02:337][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.07.06-14.22.02:337][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.07.06-14.22.02:337][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.07.06-14.22.02:337][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.07.06-14.22.02:337][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.07.06-14.22.02:424][  0]LogNetVersion: OffworldInvader 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 3010887049)
+[2021.07.06-14.22.04:211][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001C8D83F3740), frame # 0
+[2021.07.06-14.22.04:211][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001C8D83ED080), frame # 0
+[2021.07.06-14.22.04:217][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001C8D8449C00), frame # 0
+[2021.07.06-14.22.04:326][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.055805 seconds
+[2021.07.06-14.22.04:331][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.07.06-14.22.04:331][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.07.06-14.22.04:331][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.07.06-14.22.05:748][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.07.06-14.22.05:758][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.07.06-14.22.05:965][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonBP/ThirdPersonOverview': Can't find file.
+[2021.07.06-14.22.05:966][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonBP/ThirdPersonOverview': Can't find file.
+[2021.07.06-14.22.05:966][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
+[2021.07.06-14.22.06:048][  0]SourceControl: Source control is disabled
+[2021.07.06-14.22.06:048][  0]SourceControl: Source control is disabled
+[2021.07.06-14.22.06:070][  0]SourceControl: Source control is disabled
+[2021.07.06-14.22.06:081][  0]SourceControl: Source control is disabled
+[2021.07.06-14.22.06:123][  0]SourceControl: Source control is disabled
+[2021.07.06-14.22.06:760][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.07.06-14.22.06:797][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.07.06-14.22.06:797][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.07.06-14.22.06:931][  0]LogOcInput: OculusInput pre-init called
+[2021.07.06-14.22.06:957][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.07.06-14.22.06:958][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.07.06-14.22.07:156][  0]LogEngine: Initializing Engine...
+[2021.07.06-14.22.07:158][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.07.06-14.22.07:158][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.07.06-14.22.07:163][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.002 s
+[2021.07.06-14.22.07:561][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.07.06-14.22.07:616][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.07.06-14.22.07:616][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001C8DAE93C00), frame # 0
+[2021.07.06-14.22.07:617][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001C8DAEDA5C0), frame # 0
+[2021.07.06-14.22.07:638][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.07.06-14.22.07:638][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.07.06-14.22.07:638][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.07.06-14.22.07:638][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.07.06-14.22.07:638][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.07.06-14.22.07:638][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.07.06-14.22.07:638][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.07.06-14.22.07:638][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.07.06-14.22.07:640][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.07.06-14.22.07:640][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.07.06-14.22.07:674][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.07.06-14.22.07:674][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.07.06-14.22.07:900][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2021.07.06-14.22.07:903][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.07.06-14.22.07:934][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.07.06-14.22.07:934][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.07.06-14.22.07:936][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.07.06-14.22.07:937][  0]LogInit: FAudioDevice initialized.
+[2021.07.06-14.22.07:939][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.07.06-14.22.08:015][  0]LogDerivedDataCache: Saved boot cache 0.08s 76MB C:/Users/User/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.07.06-14.22.08:015][  0]LogInit: Texture streaming: Enabled
+[2021.07.06-14.22.08:041][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.07.06-14.22.08:041][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=AbnormalShutdown, SessionId={FC88357C-48BB-AF01-AD8A-05971033BA3C}
+[2021.07.06-14.22.08:041][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.07.06-14.22.08:044][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.07.06-14.22.08:249][  0]LogInit: Transaction tracking system initialized
+[2021.07.06-14.22.08:311][  0]BlueprintLog: New page: Editor Load
+[2021.07.06-14.22.08:583][  0]LocalizationService: Localization service is disabled
+[2021.07.06-14.22.09:288][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.07.06-14.22.09:288][  0]LogCook: Display: Mobile HDR setting 1
+[2021.07.06-14.22.09:604][  0]LogFileCache: Scanning file cache for directory 'C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Content/' took 0.01s
+[2021.07.06-14.22.09:926][  0]SourceControl: Source control is disabled
+[2021.07.06-14.22.09:926][  0]LogUnrealEdMisc: Loading editor; pre map load, took 25.686
+[2021.07.06-14.22.09:938][  0]LightingResults: New page: Lighting Build
+[2021.07.06-14.22.09:945][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.07.06-14.22.09:945][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.07.06-14.22.09:946][  0]MapCheck: New page: Map Check
+[2021.07.06-14.22.09:946][  0]LightingResults: New page: Lighting Build
+[2021.07.06-14.22.09:963][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001C8DAE93C00), frame # 0
+[2021.07.06-14.22.09:964][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001C8DAEDA5C0), frame # 0
+[2021.07.06-14.22.09:965][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2021.07.06-14.22.10:246][  0]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.07.06-14.22.10:246][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001C8CA7FC200), frame # 0
+[2021.07.06-14.22.10:246][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001C8DAEAF240), frame # 0
+[2021.07.06-14.22.10:280][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.07.06-14.22.10:295][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2021.07.06-14.22.10:295][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.07.06-14.22.10:296][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.577ms to complete.
+[2021.07.06-14.22.10:296][  0]LogFileHelpers: Loading map 'FlyingExampleMap' took 0.369
+[2021.07.06-14.22.10:332][  0]LogUnrealEdMisc: Total Editor Startup Time, took 26.092
+[2021.07.06-14.22.10:512][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.07.06-14.22.10:521][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.07.06-14.22.10:528][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.07.06-14.22.10:536][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.07.06-14.22.10:554][  0]LogCollectionManager: Loaded 0 collections in 0.001823 seconds
+[2021.07.06-14.22.10:595][  0]LogFileCache: Scanning file cache for directory 'C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Saved/Collections/' took 0.00s
+[2021.07.06-14.22.10:595][  0]LogFileCache: Scanning file cache for directory 'C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Content/Developers/User/Collections/' took 0.00s
+[2021.07.06-14.22.10:595][  0]LogFileCache: Scanning file cache for directory 'C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/Content/Collections/' took 0.00s
+[2021.07.06-14.22.10:595][  0]LogContentBrowser: Native class hierarchy populated in 0.0114 seconds. Added 3429 classes and 823 folders.
+[2021.07.06-14.22.10:606][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.07.06-14.22.11:090][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.07.06-14.22.11:099][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 2 classes and 0 folders.
+[2021.07.06-14.22.11:250][  0]LogSlate: Took 0.009136 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.07.06-14.22.11:262][  0]LogSlate: Took 0.009386 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.07.06-14.22.11:277][  0]LogSlate: Took 0.009256 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.07.06-14.22.11:414][  0]LogRenderer: Reallocating scene render targets to support 1224x572 Format 10 NumSamples 1 (Frame:1).
+[2021.07.06-14.22.11:570][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.07.06-14.22.11:570][  0]LogLoad: (Engine Initialization) Total time: 27.33 seconds
+[2021.07.06-14.22.11:570][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.07.06-14.22.11:624][  0]LogAssetRegistry: Asset discovery search completed in 10.0350 seconds
+[2021.07.06-14.22.11:628][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2021.07.06-14.22.11:633][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.07.06-14.22.11:668][  0]LogSlate: Took 0.008841 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.07.06-14.22.14:199][115]LogTemp: Repeating last play command: Selected Viewport
+[2021.07.06-14.22.14:210][115]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.07.06-14.22.14:212][115]PIE: New page: PIE session: FlyingExampleMap (6 Jul 2021, 16:22:14)
+[2021.07.06-14.22.14:214][115]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.07.06-14.22.14:216][115]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.07.06-14.22.14:216][115]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.07.06-14.22.14:238][115]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022043s)
+[2021.07.06-14.22.14:240][115]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.07.06-14.22.14:240][115]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001C8F4F89800), frame # 115
+[2021.07.06-14.22.14:240][115]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001C8CA3B0400), frame # 115
+[2021.07.06-14.22.14:241][115]LogPlayLevel: PIE: World Init took: (0.002214s)
+[2021.07.06-14.22.14:241][115]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.024863s)
+[2021.07.06-14.22.14:252][115]LogUObjectHash: Compacting FUObjectHashTables data took   1.19ms
+[2021.07.06-14.22.14:253][115]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.07.06-14.22.14:253][115]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.07.06-14.22.14:253][115]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.07.06-14.22.14:253][115]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.07.06-14.22.14:253][115]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.07.06-14.22.14:253][115]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.07.06-14.22.14:253][115]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.07.06-14.22.14:253][115]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.07.06-14.22.14:254][115]LogAudio: Display: Using built-in audio occlusion.
+[2021.07.06-14.22.14:254][115]LogAudioMixer: Display: Initializing audio mixer.
+[2021.07.06-14.22.14:257][115]LogAudioMixer: Display: 0: FrontLeft
+[2021.07.06-14.22.14:257][115]LogAudioMixer: Display: 1: FrontRight
+[2021.07.06-14.22.14:306][115]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2021.07.06-14.22.14:306][115]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.07.06-14.22.14:306][115]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.07.06-14.22.14:306][115]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.07.06-14.22.14:307][115]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.07.06-14.22.14:321][115]LogInit: FAudioDevice initialized.
+[2021.07.06-14.22.14:333][115]LogLoad: Game class is 'OffworldInvaderGameMode'
+[2021.07.06-14.22.14:341][115]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.07.06-15.22.14
+[2021.07.06-14.22.14:342][115]LogWorld: Bringing up level for play took: 0.004846
+[2021.07.06-14.22.14:342][115]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2021.07.06-14.22.14:349][115]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2021.07.06-14.22.14:351][115]PIE: Server logged in
+[2021.07.06-14.22.14:353][115]PIE: Play in editor total start time 0.144 seconds.
+[2021.07.06-14.22.53:832][479]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.07.06-14.22.53:832][479]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.07.06-14.22.53:833][479]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.07.06-14.22.53:835][479]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.07.06-14.22.53:846][479]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.07.06-14.22.53:848][479]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.07.06-14.22.53:877][479]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.07.06-14.22.53:880][479]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001C8F4F89800), frame # 2479
+[2021.07.06-14.22.53:880][479]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001C8CA3B0400), frame # 2479
+[2021.07.06-14.22.53:880][479]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.07.06-14.22.53:905][480]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2021.07.06-14.23.11:622][379]LogHttp: Warning: 000001C8F7A6F200: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BFC270D11-45EC-EEA8-D381-E89E5F386D12%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=142d202f4b5770855791d1b051169f03%7Ced7a3a59b4454b0890177a5c2b24cf86%7C669696d8-80f3-4a38-9c94-9954f94234b4&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.07.06-14.23.11:622][379]LogHttp: Warning: 000001C8F7A6F200: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2021.07.06-14.23.11:622][379]LogHttp: Warning: 000001C8F7A6F200: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2021.07.06-14.23.11:622][379]LogHttp: Warning: 000001C8F7A6F200: libcurl info message cache 1 (Closing connection 0)
+[2021.07.06-14.23.11:642][380]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BFC270D11-45EC-EEA8-D381-E89E5F386D12%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=142d202f4b5770855791d1b051169f03%7Ced7a3a59b4454b0890177a5c2b24cf86%7C669696d8-80f3-4a38-9c94-9954f94234b4&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2021.07.06-14.24.38:466][615]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2021.07.06-14.25.12:038][715]LogHttp: Warning: 000001C8F7A6C800: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BFC270D11-45EC-EEA8-D381-E89E5F386D12%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=142d202f4b5770855791d1b051169f03%7Ced7a3a59b4454b0890177a5c2b24cf86%7C669696d8-80f3-4a38-9c94-9954f94234b4&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.07.06-14.25.12:038][715]LogHttp: Warning: 000001C8F7A6C800: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2021.07.06-14.25.12:038][715]LogHttp: Warning: 000001C8F7A6C800: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2021.07.06-14.25.12:038][715]LogHttp: Warning: 000001C8F7A6C800: libcurl info message cache 1 (Closing connection 1)
+[2021.07.06-14.25.12:372][716]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BFC270D11-45EC-EEA8-D381-E89E5F386D12%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=142d202f4b5770855791d1b051169f03%7Ced7a3a59b4454b0890177a5c2b24cf86%7C669696d8-80f3-4a38-9c94-9954f94234b4&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2021.07.06-14.25.24:249][768]LogHotReload: New module detected: UE4Editor-OffworldInvader-0030.dll
+[2021.07.06-14.25.25:264][772]LogHotReload: Starting Hot-Reload from IDE
+[2021.07.06-14.25.25:272][772]LogSlate: Took 0.000181 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.07.06-14.25.25:355][772]LogContentBrowser: Native class hierarchy updated for 'OffworldInvader' in 0.0005 seconds. Added 2 classes and 2 folders.
+[2021.07.06-14.25.25:357][772]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.07.06-14.25.25:423][772]LogContentBrowser: Native class hierarchy populated in 0.0134 seconds. Added 3429 classes and 823 folders.
+[2021.07.06-14.25.25:428][772]Display: HotReload took  0.2s.
+[2021.07.06-14.25.32:890][891]Candidate modules for hot reload:
+[2021.07.06-14.25.32:890][891]  OffworldInvader
+[2021.07.06-14.25.32:890][891]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=OffworldInvader,9358 OffworldInvaderEditor Win64 Development -Project="C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/OffworldInvader.uproject" "C:/Users/User/Desktop/TempFolder/GVE/Offworld JamProject/OffworldJam/OffworldInvader/GVEOffworld/OffworldInvader/OffworldInvader.uproject"  -IgnoreJunk]
+[2021.07.06-14.25.32:892][891]Warning: Starting HotReload took  0.0s.
+[2021.07.06-14.25.35:067][  6]CompilerResultsLog: New page: Compilation - 6 Jul 2021, 16:25:35
+[2021.07.06-14.25.35:067][  6]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld).
+[2021.07.06-14.25.35:067][  6]CompilerResultsLog: Building OffworldInvaderEditor...
+[2021.07.06-14.25.35:068][  6]CompilerResultsLog: Using Visual Studio 2019 14.28.29336 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.07.06-14.25.35:068][  6]CompilerResultsLog: Building 3 actions with 8 processes...
+[2021.07.06-14.25.35:069][  6]CompilerResultsLog:   [1/3] UE4Editor-OffworldInvader-9358.lib
+[2021.07.06-14.25.35:069][  6]CompilerResultsLog:      Creating library C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\UE4Editor-OffworldInvader-9358.lib and object C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\UE4Editor-OffworldInvader-9358.exp
+[2021.07.06-14.25.35:069][  6]CompilerResultsLog:   [2/3] UE4Editor-OffworldInvader-9358.dll
+[2021.07.06-14.25.35:069][  6]CompilerResultsLog:      Creating library C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\UE4Editor-OffworldInvader-9358.suppressed.lib and object C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\UE4Editor-OffworldInvader-9358.suppressed.exp
+[2021.07.06-14.25.35:069][  6]CompilerResultsLog:   [3/3] OffworldInvaderEditor.target
+[2021.07.06-14.25.35:069][  6]CompilerResultsLog: Total time in Parallel executor: 1.12 seconds
+[2021.07.06-14.25.35:069][  6]CompilerResultsLog: Total execution time: 2.08 seconds
+[2021.07.06-14.25.35:069][  6]LogMainFrame: MainFrame: Module compiling took 2.184 seconds
+[2021.07.06-14.25.35:097][  6]LogContentBrowser: Native class hierarchy updated for 'OffworldInvader' in 0.0004 seconds. Added 2 classes and 2 folders.
+[2021.07.06-14.25.35:099][  6]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.07.06-14.25.35:141][  6]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 3429 classes and 823 folders.
+[2021.07.06-14.25.35:141][  6]Display: HotReload took  2.3s.
+[2021.07.06-14.25.36:325][ 77]LogTemp: Repeating last play command: Selected Viewport
+[2021.07.06-14.25.36:342][ 77]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.07.06-14.25.36:343][ 77]PIE: New page: PIE session: FlyingExampleMap (6 Jul 2021, 16:25:36)
+[2021.07.06-14.25.36:343][ 77]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.07.06-14.25.36:366][ 77]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023001s)
+[2021.07.06-14.25.36:369][ 77]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.07.06-14.25.36:369][ 77]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001C8F76A1E00), frame # 5077
+[2021.07.06-14.25.36:369][ 77]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001C8CA390900), frame # 5077
+[2021.07.06-14.25.36:369][ 77]LogPlayLevel: PIE: World Init took: (0.003085s)
+[2021.07.06-14.25.36:370][ 77]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.026587s)
+[2021.07.06-14.25.36:395][ 77]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2021.07.06-14.25.36:396][ 77]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.07.06-14.25.36:396][ 77]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.07.06-14.25.36:396][ 77]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.07.06-14.25.36:396][ 77]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.07.06-14.25.36:396][ 77]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.07.06-14.25.36:396][ 77]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.07.06-14.25.36:397][ 77]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.07.06-14.25.36:397][ 77]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.07.06-14.25.36:397][ 77]LogAudio: Display: Using built-in audio occlusion.
+[2021.07.06-14.25.36:397][ 77]LogAudioMixer: Display: Initializing audio mixer.
+[2021.07.06-14.25.36:401][ 77]LogAudioMixer: Display: 0: FrontLeft
+[2021.07.06-14.25.36:401][ 77]LogAudioMixer: Display: 1: FrontRight
+[2021.07.06-14.25.36:451][ 77]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2021.07.06-14.25.36:451][ 77]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.07.06-14.25.36:451][ 77]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.07.06-14.25.36:451][ 77]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.07.06-14.25.36:451][ 77]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.07.06-14.25.36:466][ 77]LogInit: FAudioDevice initialized.
+[2021.07.06-14.25.36:477][ 77]LogLoad: Game class is 'OffworldInvaderGameMode'
+[2021.07.06-14.25.36:483][ 77]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.07.06-15.25.36
+[2021.07.06-14.25.36:484][ 77]LogWorld: Bringing up level for play took: 0.005524
+[2021.07.06-14.25.36:484][ 77]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2021.07.06-14.25.36:486][ 77]PIE: Server logged in
+[2021.07.06-14.25.36:487][ 77]PIE: Play in editor total start time 0.151 seconds.
+[2021.07.06-14.25.43:827][189]LogRHI: Error: Present Fail Count 1
+[2021.07.06-14.25.43:827][189]LogRHI: Error: SyncInterval 0
+[2021.07.06-14.25.43:827][189]LogRHI: Error: SwapChainDesc.BufferDesc.Width 1936
+[2021.07.06-14.25.43:827][189]LogRHI: Error: SwapChainDesc.BufferDesc.Height 1056
+[2021.07.06-14.25.43:827][189]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Numerator 0
+[2021.07.06-14.25.43:827][189]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Denominator 0
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.Format 24
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.ScanlineOrdering 0
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.Scaling 0
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.SampleDesc.Count 1
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.SampleDesc.Quality 0
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferUsage 48
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferCount 2
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.OutputWindow 000000000005041A
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.Windowed true
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.SwapEffect 4
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.Flags 2050
+[2021.07.06-14.25.43:828][189]LogRHI: Error: Present Fail Count 1
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SyncInterval 0
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.Width 354
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.Height 63
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Numerator 0
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Denominator 0
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.Format 24
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.ScanlineOrdering 0
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.BufferDesc.Scaling 0
+[2021.07.06-14.25.43:828][189]LogRHI: Error: SwapChainDesc.SampleDesc.Count 1
+[2021.07.06-14.25.43:829][189]LogRHI: Error: SwapChainDesc.SampleDesc.Quality 0
+[2021.07.06-14.25.43:829][189]LogRHI: Error: SwapChainDesc.BufferUsage 48
+[2021.07.06-14.25.43:829][189]LogRHI: Error: SwapChainDesc.BufferCount 2
+[2021.07.06-14.25.43:829][189]LogRHI: Error: SwapChainDesc.OutputWindow 000000000002045C
+[2021.07.06-14.25.43:829][189]LogRHI: Error: SwapChainDesc.Windowed true
+[2021.07.06-14.25.43:829][189]LogRHI: Error: SwapChainDesc.SwapEffect 4
+[2021.07.06-14.25.43:829][189]LogRHI: Error: SwapChainDesc.Flags 2050
+[2021.07.06-14.25.50:974][212]LogRHI: Error: Present Fail Count 2
+[2021.07.06-14.25.50:974][212]LogRHI: Error: SyncInterval 0
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.BufferDesc.Width 1936
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.BufferDesc.Height 1056
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Numerator 0
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Denominator 0
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.BufferDesc.Format 24
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.BufferDesc.ScanlineOrdering 0
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.BufferDesc.Scaling 0
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.SampleDesc.Count 1
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.SampleDesc.Quality 0
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.BufferUsage 48
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.BufferCount 2
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.OutputWindow 000000000005041A
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.Windowed true
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.SwapEffect 4
+[2021.07.06-14.25.50:975][212]LogRHI: Error: SwapChainDesc.Flags 2050
+[2021.07.06-14.25.51:162][215]LogRHI: Error: Present Fail Count 3
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SyncInterval 0
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.BufferDesc.Width 1936
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.BufferDesc.Height 1056
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Numerator 0
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Denominator 0
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.BufferDesc.Format 24
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.BufferDesc.ScanlineOrdering 0
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.BufferDesc.Scaling 0
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.SampleDesc.Count 1
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.SampleDesc.Quality 0
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.BufferUsage 48
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.BufferCount 2
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.OutputWindow 000000000005041A
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.Windowed true
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.SwapEffect 4
+[2021.07.06-14.25.51:162][215]LogRHI: Error: SwapChainDesc.Flags 2050
+[2021.07.06-14.25.51:212][218]LogRHI: Error: Present Fail Count 4
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SyncInterval 0
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.BufferDesc.Width 1936
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.BufferDesc.Height 1056
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Numerator 0
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Denominator 0
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.BufferDesc.Format 24
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.BufferDesc.ScanlineOrdering 0
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.BufferDesc.Scaling 0
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.SampleDesc.Count 1
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.SampleDesc.Quality 0
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.BufferUsage 48
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.BufferCount 2
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.OutputWindow 000000000005041A
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.Windowed true
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.SwapEffect 4
+[2021.07.06-14.25.51:212][218]LogRHI: Error: SwapChainDesc.Flags 2050
+[2021.07.06-14.25.51:263][221]LogRHI: Error: Present Fail Count 5
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SyncInterval 0
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.BufferDesc.Width 1936
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.BufferDesc.Height 1056
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Numerator 0
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Denominator 0
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.BufferDesc.Format 24
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.BufferDesc.ScanlineOrdering 0
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.BufferDesc.Scaling 0
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.SampleDesc.Count 1
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.SampleDesc.Quality 0
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.BufferUsage 48
+[2021.07.06-14.25.51:263][221]LogRHI: Error: SwapChainDesc.BufferCount 2
+[2021.07.06-14.25.51:264][221]LogRHI: Error: SwapChainDesc.OutputWindow 000000000005041A
+[2021.07.06-14.25.51:264][221]LogRHI: Error: SwapChainDesc.Windowed true
+[2021.07.06-14.25.51:264][221]LogRHI: Error: SwapChainDesc.SwapEffect 4
+[2021.07.06-14.25.51:264][221]LogRHI: Error: SwapChainDesc.Flags 2050

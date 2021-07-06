@@ -10,6 +10,9 @@ class AOffworldInvaderPawn : public APawn
 {
 	GENERATED_BODY()
 
+	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UStaticMeshComponent* RootMesh;
+
 	/** StaticMesh component that will be the visuals for our flying pawn */
 	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PlaneMesh;
@@ -44,6 +47,8 @@ protected:
 	/** Bound to the horizontal axis */
 	void MoveRightInput(float Val);
 
+	bool NoMovementInput();
+
 private:
 
 	/** How quickly forward speed changes */
@@ -74,7 +79,18 @@ private:
 	/** Current roll speed */
 	float CurrentRollSpeed;
 
+	float CurrentXYSpeed;
+
+	float CurrentZSpeed;
+
+	float TargetRollSpeed;
+
+	bool bIsTurningVertically;
+
+	bool bIsTurningHorizontally;
+
 public:
+	FORCEINLINE class UStaticMeshComponent* GetRootMesh() const { return RootMesh; }
 	/** Returns PlaneMesh subobject **/
 	FORCEINLINE class UStaticMeshComponent* GetPlaneMesh() const { return PlaneMesh; }
 	/** Returns SpringArm subobject **/

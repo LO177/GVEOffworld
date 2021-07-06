@@ -59,6 +59,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AOffworldInvaderPawn); \
 
 
 #define OffworldInvader_Source_OffworldInvader_OffworldInvaderPawn_h_11_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__RootMesh() { return STRUCT_OFFSET(AOffworldInvaderPawn, RootMesh); } \
 	FORCEINLINE static uint32 __PPO__PlaneMesh() { return STRUCT_OFFSET(AOffworldInvaderPawn, PlaneMesh); } \
 	FORCEINLINE static uint32 __PPO__SpringArm() { return STRUCT_OFFSET(AOffworldInvaderPawn, SpringArm); } \
 	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(AOffworldInvaderPawn, Camera); } \

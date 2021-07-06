@@ -23,9 +23,14 @@ AOffworldInvaderPawn::AOffworldInvaderPawn()
 	static FConstructorStatics ConstructorStatics;
 
 	// Create static mesh component
+	
+	RootMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RootMesh0"));
+	//RootMesh->SetStaticMesh(ConstructorStatics.RootMesh.Get());
+	RootComponent = RootMesh;
+	
 	PlaneMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlaneMesh0"));
 	PlaneMesh->SetStaticMesh(ConstructorStatics.PlaneMesh.Get());	// Set static mesh
-	RootComponent = PlaneMesh;
+	//RootComponent = PlaneMesh;
 
 	// Create a spring arm component
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm0"));
@@ -42,27 +47,32 @@ AOffworldInvaderPawn::AOffworldInvaderPawn()
 
 	// Set handling parameters
 	Acceleration = 500.f;
-	TurnSpeed = 50.f;
-	MaxSpeed = 4000.f;
+	TurnSpeed = 100.f;
+	MaxSpeed = 8000.f;
 	MinSpeed = 500.f;
 	CurrentForwardSpeed = 500.f;
+
+	CurrentXYSpeed = 0.f;
+	CurrentZSpeed = 0.f;
 }
 
 void AOffworldInvaderPawn::Tick(float DeltaSeconds)
 {
-	const FVector LocalMove = FVector(CurrentForwardSpeed * DeltaSeconds, 0.f, 0.f);
-
-	// Move plan forwards (with sweep so we stop when we collide with things)
-	AddActorLocalOffset(LocalMove, true);
-
 	// Calculate change in rotation this frame
-	FRotator DeltaRotation(0,0,0);
+	FRotator DeltaRotation;
 	DeltaRotation.Pitch = CurrentPitchSpeed * DeltaSeconds;
 	DeltaRotation.Yaw = CurrentYawSpeed * DeltaSeconds;
 	DeltaRotation.Roll = CurrentRollSpeed * DeltaSeconds;
 
+	// Roll dependant on Yaw
+	//const FRotator LocalRotate = FRotator(0.0f, DeltaRotation.Yaw, DeltaRotation.Roll);
+	const FVector LocalMove = FVector(0.f, CurrentXYSpeed, CurrentZSpeed);//FRotationMatrix(LocalRotate * CurrentForwardSpeed * DeltaSeconds).GetUnitAxis(EAxis::X);//FVector(CurrentForwardSpeed * DeltaSeconds, 0.f, 0.f);
+
+	// Move plan forwards (with sweep so we stop when we collide with things)
+	RootMesh->AddLocalOffset(LocalMove, true);
+	
 	// Rotate plane
-	AddActorLocalRotation(DeltaRotation);
+	PlaneMesh->AddLocalRotation(DeltaRotation);
 
 	// Call any parent class Tick implementation
 	Super::Tick(DeltaSeconds);
@@ -85,8 +95,8 @@ void AOffworldInvaderPawn::SetupPlayerInputComponent(class UInputComponent* Play
 
 	// Bind our control axis' to callback functions
 	PlayerInputComponent->BindAxis("Thrust", this, &AOffworldInvaderPawn::ThrustInput);
-	PlayerInputComponent->BindAxis("MoveUp", this, &AOffworldInvaderPawn::MoveUpInput);
-	PlayerInputComponent->BindAxis("MoveRight", this, &AOffworldInvaderPawn::MoveRightInput);
+	PlayerInputComponent->BindAxis("MoveUp_MouseY", this, &AOffworldInvaderPawn::MoveUpInput);
+	PlayerInputComponent->BindAxis("MoveRight_MouseX", this, &AOffworldInvaderPawn::MoveRightInput);
 }
 
 void AOffworldInvaderPawn::ThrustInput(float Val)
@@ -103,18 +113,36 @@ void AOffworldInvaderPawn::ThrustInput(float Val)
 
 void AOffworldInvaderPawn::MoveUpInput(float Val)
 {
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Ver Val: %f"), Val));
+	
 	// Target pitch speed is based in input
-	float TargetPitchSpeed = (Val * TurnSpeed * -1.f);
+	float TargetPitchSpeed = (Val * TurnSpeed); // * -1.f
 
 	// When steering, we decrease pitch slightly
 	TargetPitchSpeed += (FMath::Abs(CurrentYawSpeed) * -0.2f);
 
 	// Smoothly interpolate to target pitch speed
 	CurrentPitchSpeed = FMath::FInterpTo(CurrentPitchSpeed, TargetPitchSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
+
+	// Is there any up/down input?
+	bIsTurningVertically = FMath::Abs(Val) > 0.2f;
+
+	// If turning, nothing happens
+	// If not turning, roll to reverse current roll value.
+	//TargetRollSpeed = NoMovementInput() ? (0.f) : (GetActorRotation().Roll * -2.f);
+
+	if(Val > 0)
+		CurrentZSpeed = 100.f;
+	else if(Val < 0)
+		CurrentZSpeed = -100.f;
+	else
+		CurrentZSpeed = 0.f;
 }
 
 void AOffworldInvaderPawn::MoveRightInput(float Val)
 {
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Hor Val: %f"), Val));
+	
 	// Target yaw speed is based on input
 	float TargetYawSpeed = (Val * TurnSpeed);
 
@@ -122,12 +150,28 @@ void AOffworldInvaderPawn::MoveRightInput(float Val)
 	CurrentYawSpeed = FMath::FInterpTo(CurrentYawSpeed, TargetYawSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
 
 	// Is there any left/right input?
-	const bool bIsTurning = FMath::Abs(Val) > 0.2f;
+	bIsTurningHorizontally = FMath::Abs(Val) > 0.2f;
 
 	// If turning, yaw value is used to influence roll
 	// If not turning, roll to reverse current roll value.
-	float TargetRollSpeed = bIsTurning ? (CurrentYawSpeed * 0.5f) : (GetActorRotation().Roll * -2.f);
+	TargetRollSpeed = NoMovementInput() ? (CurrentYawSpeed * 0.5f) : (GetActorRotation().Roll * -2.f);
 
 	// Smoothly interpolate roll speed
 	CurrentRollSpeed = FMath::FInterpTo(CurrentRollSpeed, TargetRollSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
+
+	if(Val > 0)
+		CurrentXYSpeed = 100.f;
+	else if(Val < 0)
+		CurrentXYSpeed = -100.f;
+	else
+		CurrentXYSpeed = 0.f;
+	//(Val > 0) ? FMath::Clamp(0.0f, CurrentForwardSpeed, MaxSpeed) : FMath::Clamp(0.0f, 0.0f, 0.0f);
+}
+
+bool AOffworldInvaderPawn::NoMovementInput()
+{
+	if(!(bIsTurningHorizontally) && !(bIsTurningVertically))
+		return false;
+	else
+		return true;
 }
