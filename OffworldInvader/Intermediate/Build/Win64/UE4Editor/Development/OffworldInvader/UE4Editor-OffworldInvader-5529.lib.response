@@ -1,0 +1,18 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-OffworldInvader-5529.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\OffworldInvaderEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvader.cpp.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvaderGameMode.cpp.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvaderPawn.cpp.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvader.init.gen.cpp.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvaderGameMode.gen.cpp.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvaderPawn.gen.cpp.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\Default.rc2.res"
+/OUT:"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\UE4Editor-OffworldInvader-5529.lib"
+/INCLUDE:IMPLEMENT_MODULE_OffworldInvader

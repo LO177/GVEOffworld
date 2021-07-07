@@ -60,9 +60,9 @@ void AOffworldInvaderPawn::Tick(float DeltaSeconds)
 {
 	// Calculate change in rotation this frame
 	FRotator DeltaRotation;
-	DeltaRotation.Pitch = CurrentPitchSpeed * DeltaSeconds;
-	DeltaRotation.Yaw = CurrentYawSpeed * DeltaSeconds;
-	DeltaRotation.Roll = CurrentRollSpeed * DeltaSeconds;
+	//DeltaRotation.Pitch = CurrentPitchSpeed * DeltaSeconds;
+	//DeltaRotation.Yaw = CurrentYawSpeed * DeltaSeconds;
+	//DeltaRotation.Roll = CurrentRollSpeed * DeltaSeconds;
 
 	// Roll dependant on Yaw
 	//const FRotator LocalRotate = FRotator(0.0f, DeltaRotation.Yaw, DeltaRotation.Roll);
@@ -70,10 +70,90 @@ void AOffworldInvaderPawn::Tick(float DeltaSeconds)
 
 	// Move plan forwards (with sweep so we stop when we collide with things)
 	RootMesh->AddLocalOffset(LocalMove, true);
+
+	/*if(HorizontalDirection > 0)
+		DeltaRotation.Yaw = FMath::FInterpTo(PlaneMesh->GetRelativeRotation().Yaw, 45.f, GetWorld()->GetDeltaSeconds(), 2.f);
+	else if(HorizontalDirection < 0)
+		DeltaRotation.Yaw = FMath::FInterpTo(PlaneMesh->GetRelativeRotation().Yaw, -45.f, GetWorld()->GetDeltaSeconds(), 2.f);*/
+
+	/*if(HorizontalDirection > 0)
+		DeltaRotation.Yaw = FMath::Lerp(45.f, -45.f, PlaneMesh->GetRelativeRotation().Yaw);
+	else if(HorizontalDirection < 0)
+		DeltaRotation.Yaw = FMath::Lerp(-45.f, 45.f, PlaneMesh->GetRelativeRotation().Yaw);*/
+	//if(PlaneMesh->GetRelativeRotation().Yaw < 45.f && PlaneMesh->GetRelativeRotation().Yaw > -45.f)
+	HorizontalDirection = LerpNormalise(HorizontalDirection);
+	VerticalDirection = LerpNormalise(VerticalDirection);
+	
+	DeltaRotation.Yaw = (FMath::Lerp(0.f, 22.5f, HorizontalDirection) *2);
+	DeltaRotation.Pitch = (FMath::Lerp(0.f, 22.5f, VerticalDirection) *2);
+	if(HorizontalDirection == 0.5f)
+	{
+		DeltaRotation.Yaw = 0.f;
+	}
+	if(VerticalDirection == 0.5f)
+	{
+		DeltaRotation.Pitch = 0.f;
+	}
+	
+	DeltaRotation.Roll = 0.f;
+	/*else if(PlaneMesh->GetRelativeRotation().Yaw >= 45.f || PlaneMesh->GetRelativeRotation().Yaw <= -45.f)
+		DeltaRotation.Yaw = FMath::Lerp(45.f, -45.f, HorizontalDirection);*/
+
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("GetRelativeRotation Yaw: %f"), PlaneMesh->GetRelativeRotation().Yaw));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("GetRelativeRotation Pitch: %f"), PlaneMesh->GetRelativeRotation().Pitch));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("GetRelativeRotation Roll: %f"), PlaneMesh->GetRelativeRotation().Roll));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("HorizontalDirection: %f"), HorizontalDirection));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("DeltaRotation Yaw: %f"), DeltaRotation.Yaw));
+
+	///
+	
+	//PlaneMesh->AddLocalRotation(DeltaRotation);
+
+	PlaneMesh->SetRelativeRotation_Direct(DeltaRotation);
+
+	/*PlaneMesh->GetRelativeLocation();
+	
+	PlaneMesh->GetRelativeRotation().Yaw;
+	PlaneMesh->GetRelativeRotation().Pitch;
+
+	FRotator foundTargetRotation = UKismetArrayLibrary::FindLookAtRotation(PlaneMesh->GetRelativeLocation(), );
+
+	PlaneMesh
+
+	PlaneMesh->AddLocalRotation(DeltaRotation);*/
 	
 	// Rotate plane
-	PlaneMesh->AddLocalRotation(DeltaRotation);
+	/*if(PlaneMesh->GetRelativeRotation().Yaw < 45.f && PlaneMesh->GetRelativeRotation().Yaw > -45.f){
+		PlaneMesh->AddLocalRotation(DeltaRotation);
+	}
+	else{
+		//DeltaRotation.Pitch = 0.f;
+		DeltaRotation.Yaw = 0.f;
+		//DeltaRotation.Roll = 0.f;
 
+		//DeltaRotation.Pitch = CurrentPitchSpeed * DeltaSeconds;
+		DeltaRotation.Yaw = CurrentYawSpeed * DeltaSeconds;
+		//DeltaRotation.Roll = CurrentRollSpeed * DeltaSeconds;
+		
+		if(HorizontalDirection < 0 && PlaneMesh->GetRelativeRotation().Yaw >= 45.f){
+			PlaneMesh->AddLocalRotation(DeltaRotation);
+		}
+		else if(HorizontalDirection > 0 && PlaneMesh->GetRelativeRotation().Yaw <= -45.f){
+			PlaneMesh->AddLocalRotation(DeltaRotation);
+		}
+		else{
+			FRotator clampedRotation;
+
+			clampedRotation.Pitch = PlaneMesh->GetRelativeRotation().Pitch * DeltaRotation.Pitch;
+			clampedRotation.Yaw = PlaneMesh->GetRelativeRotation().Yaw >= 45.f ? (45.f) : (-45.f);
+			clampedRotation.Roll = PlaneMesh->GetRelativeRotation().Roll * DeltaRotation.Roll;
+		
+			PlaneMesh->SetRelativeRotation_Direct(clampedRotation);
+		}
+	}*/
+
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, FString::Printf(TEXT("Hor/Yaw Rotation: %f"), PlaneMesh->GetRelativeRotation().Yaw));
+		
 	// Call any parent class Tick implementation
 	Super::Tick(DeltaSeconds);
 }
@@ -113,7 +193,8 @@ void AOffworldInvaderPawn::ThrustInput(float Val)
 
 void AOffworldInvaderPawn::MoveUpInput(float Val)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Ver Val: %f"), Val));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Ver Val: %f"), Val));
+	VerticalDirection = Val;
 	
 	// Target pitch speed is based in input
 	float TargetPitchSpeed = (Val * TurnSpeed); // * -1.f
@@ -122,7 +203,12 @@ void AOffworldInvaderPawn::MoveUpInput(float Val)
 	TargetPitchSpeed += (FMath::Abs(CurrentYawSpeed) * -0.2f);
 
 	// Smoothly interpolate to target pitch speed
-	CurrentPitchSpeed = FMath::FInterpTo(CurrentPitchSpeed, TargetPitchSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
+	//if(PlaneMesh->GetRelativeRotation().Pitch < 45.f && PlaneMesh->GetRelativeRotation().Pitch > -45.f)
+		CurrentPitchSpeed = FMath::FInterpTo(CurrentPitchSpeed, TargetPitchSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
+	//else
+	//	CurrentPitchSpeed = 0.f;
+	
+	
 
 	// Is there any up/down input?
 	bIsTurningVertically = FMath::Abs(Val) > 0.2f;
@@ -141,23 +227,32 @@ void AOffworldInvaderPawn::MoveUpInput(float Val)
 
 void AOffworldInvaderPawn::MoveRightInput(float Val)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Hor Val: %f"), Val));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Hor Val: %f"), Val));
+	HorizontalDirection = Val;
+
+	// Is there any left/right input?
+	bIsTurningHorizontally = FMath::Abs(Val) > 0.2f;
 	
 	// Target yaw speed is based on input
 	float TargetYawSpeed = (Val * TurnSpeed);
 
+	
+	
 	// Smoothly interpolate to target yaw speed
-	CurrentYawSpeed = FMath::FInterpTo(CurrentYawSpeed, TargetYawSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
+	//if(PlaneMesh->GetRelativeRotation().Yaw < 45.f && PlaneMesh->GetRelativeRotation().Yaw > -45.f)
+		CurrentYawSpeed = FMath::FInterpTo(CurrentYawSpeed, TargetYawSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
+	//else
+	//	CurrentYawSpeed = 0.f;
 
-	// Is there any left/right input?
-	bIsTurningHorizontally = FMath::Abs(Val) > 0.2f;
+	//if(bIsTurningHorizontally)
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Val: %f"), Val));
 
 	// If turning, yaw value is used to influence roll
 	// If not turning, roll to reverse current roll value.
-	TargetRollSpeed = NoMovementInput() ? (CurrentYawSpeed * 0.5f) : (GetActorRotation().Roll * -2.f);
+	//TargetRollSpeed = NoMovementInput() ? (CurrentYawSpeed * 0.5f) : (GetActorRotation().Roll * -2.f);
 
-	// Smoothly interpolate roll speed
-	CurrentRollSpeed = FMath::FInterpTo(CurrentRollSpeed, TargetRollSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
+	// Smoothly interpolate roll speedB
+	//CurrentRollSpeed = FMath::FInterpTo(CurrentRollSpeed, TargetRollSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
 
 	if(Val > 0)
 		CurrentXYSpeed = 100.f;
@@ -174,4 +269,18 @@ bool AOffworldInvaderPawn::NoMovementInput()
 		return false;
 	else
 		return true;
+}
+
+float AOffworldInvaderPawn::LerpNormalise(float valueToLerpNormalise){
+	valueToLerpNormalise = (valueToLerpNormalise + 1.f) / 2.f;
+	if(valueToLerpNormalise >= 1.f)
+	{
+		valueToLerpNormalise = 1.f;
+	}
+	else if(valueToLerpNormalise <= -1.f)
+	{
+		valueToLerpNormalise = -1.f;
+	}
+
+	return valueToLerpNormalise;
 }

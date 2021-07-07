@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeOffworldInvader_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x6AB343E9,
-				0x1EDE59E8,
+				0x42771BA4,
+				0xD9BEC50C,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\OffworldInvader.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A66AB439-73B8-4839-9F3A-446976638E96}</UniqueIdentifier>
+      <UniqueIdentifier>{F87B1C9D-C20A-4D23-8C34-6B3ADAA2A237}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\OffworldInvader.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{614F30FF-C868-4E07-BF71-64B329C08EE6}</UniqueIdentifier>
+      <UniqueIdentifier>{6BEDA757-F7F8-484C-8EA5-229C2F93B78A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\OffworldInvader">
-      <UniqueIdentifier>{E01047B5-FA2F-4294-95CB-AD412F975867}</UniqueIdentifier>
+      <UniqueIdentifier>{74912D2E-762E-4C8D-9BC4-A0BECF970AB3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\OffworldInvader\OffworldInvader.Build.cs">
       <Filter>Source\OffworldInvader</Filter>
@@ -51,6 +51,12 @@
       <Filter>Source\OffworldInvader</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\OffworldInvader\OffworldInvaderPawn.h">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\OffworldInvader\PathSequencer.cpp">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OffworldInvader\PathSequencer.h">
       <Filter>Source\OffworldInvader</Filter>
     </ClInclude>
   </ItemGroup>

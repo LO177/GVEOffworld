@@ -15701,6 +15701,9 @@
 				"Engine",
 				"InputCore"
 			],
+			"PrivateDependencyModules": [
+				"Engine"
+			],
 			"PublicIncludePaths": [
 				"C:\\Users\\User\\Desktop\\TempFolder\\GVE\\Offworld JamProject\\OffworldJam\\OffworldInvader\\GVEOffworld\\OffworldInvader\\Source"
 			],

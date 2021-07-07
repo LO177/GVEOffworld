@@ -49,6 +49,8 @@ protected:
 
 	bool NoMovementInput();
 
+	float LerpNormalise(float Val);
+
 private:
 
 	/** How quickly forward speed changes */
@@ -86,8 +88,10 @@ private:
 	float TargetRollSpeed;
 
 	bool bIsTurningVertically;
-
 	bool bIsTurningHorizontally;
+	
+	float HorizontalDirection;
+	float VerticalDirection;
 
 public:
 	FORCEINLINE class UStaticMeshComponent* GetRootMesh() const { return RootMesh; }
