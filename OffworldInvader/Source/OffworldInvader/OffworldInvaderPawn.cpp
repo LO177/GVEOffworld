@@ -99,7 +99,7 @@ void AOffworldInvaderPawn::Tick(float DeltaSeconds)
 	/*else if(PlaneMesh->GetRelativeRotation().Yaw >= 45.f || PlaneMesh->GetRelativeRotation().Yaw <= -45.f)
 		DeltaRotation.Yaw = FMath::Lerp(45.f, -45.f, HorizontalDirection);*/
 
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("GetRelativeRotation Yaw: %f"), PlaneMesh->GetRelativeRotation().Yaw));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("GetRelativeRotation Yaw: %f"), PlaneMesh->GetRelativeRotation().Yaw));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("GetRelativeRotation Pitch: %f"), PlaneMesh->GetRelativeRotation().Pitch));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("GetRelativeRotation Roll: %f"), PlaneMesh->GetRelativeRotation().Roll));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("HorizontalDirection: %f"), HorizontalDirection));

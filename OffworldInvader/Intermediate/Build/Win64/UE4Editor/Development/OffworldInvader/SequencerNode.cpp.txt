@@ -1,0 +1,3 @@
+C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\Definitions.OffworldInvader.h
+C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Source\OffworldInvader\SequencerNode.h
+C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Inc\OffworldInvader\SequencerNode.generated.h

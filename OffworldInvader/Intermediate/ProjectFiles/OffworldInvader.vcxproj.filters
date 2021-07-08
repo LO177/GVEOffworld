@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\OffworldInvader.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F87B1C9D-C20A-4D23-8C34-6B3ADAA2A237}</UniqueIdentifier>
+      <UniqueIdentifier>{9DED1DD8-CEA0-4088-A415-125AA14098DF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\OffworldInvader.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{6BEDA757-F7F8-484C-8EA5-229C2F93B78A}</UniqueIdentifier>
+      <UniqueIdentifier>{893AB829-BCDD-4DAD-A08F-F4CA0DC402C3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\OffworldInvader">
-      <UniqueIdentifier>{74912D2E-762E-4C8D-9BC4-A0BECF970AB3}</UniqueIdentifier>
+      <UniqueIdentifier>{CD16CCC4-793D-41B3-AF28-67B7C391328B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\OffworldInvader\OffworldInvader.Build.cs">
       <Filter>Source\OffworldInvader</Filter>
@@ -57,6 +57,24 @@
       <Filter>Source\OffworldInvader</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\OffworldInvader\PathSequencer.h">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\OffworldInvader\SequenceNode.cpp">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OffworldInvader\SequenceNode.h">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\OffworldInvader\SequencePath.cpp">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OffworldInvader\SequencePath.h">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\OffworldInvader\SequencerNode.cpp">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OffworldInvader\SequencerNode.h">
       <Filter>Source\OffworldInvader</Filter>
     </ClInclude>
   </ItemGroup>

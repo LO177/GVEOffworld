@@ -13,10 +13,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define OFFWORLDINVADER_PathSequencer_generated_h
 
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_SPARSE_DATA
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_RPC_WRAPPERS
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_INCLASS_NO_PURE_DECLS \
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_33_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FMainStruct_Statics; \
+	OFFWORLDINVADER_API static class UScriptStruct* StaticStruct();
+
+
+template<> OFFWORLDINVADER_API UScriptStruct* StaticStruct<struct FMainStruct>();
+
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_19_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FSequenceStruct_Statics; \
+	OFFWORLDINVADER_API static class UScriptStruct* StaticStruct();
+
+
+template<> OFFWORLDINVADER_API UScriptStruct* StaticStruct<struct FSequenceStruct>();
+
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_SPARSE_DATA
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_RPC_WRAPPERS
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_RPC_WRAPPERS_NO_PURE_DECLS
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPathSequencer(); \
 	friend struct Z_Construct_UClass_APathSequencer_Statics; \
@@ -25,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(APathSequencer)
 
 
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_INCLASS \
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_INCLASS \
 private: \
 	static void StaticRegisterNativesAPathSequencer(); \
 	friend struct Z_Construct_UClass_APathSequencer_Statics; \
@@ -34,7 +48,7 @@ public: \
 	DECLARE_SERIALIZER(APathSequencer)
 
 
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_STANDARD_CONSTRUCTORS \
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APathSequencer(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APathSequencer) \
@@ -47,7 +61,7 @@ private: \
 public:
 
 
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_ENHANCED_CONSTRUCTORS \
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APathSequencer(APathSequencer&&); \
@@ -58,28 +72,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APathSequencer); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APathSequencer)
 
 
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_PRIVATE_PROPERTY_OFFSET
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_9_PROLOG
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_GENERATED_BODY_LEGACY \
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__sequenceStruct() { return STRUCT_OFFSET(APathSequencer, sequenceStruct); }
+
+
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_39_PROLOG
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_PRIVATE_PROPERTY_OFFSET \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_SPARSE_DATA \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_RPC_WRAPPERS \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_INCLASS \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_STANDARD_CONSTRUCTORS \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_PRIVATE_PROPERTY_OFFSET \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_SPARSE_DATA \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_RPC_WRAPPERS \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_INCLASS \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_GENERATED_BODY \
+#define OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_PRIVATE_PROPERTY_OFFSET \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_SPARSE_DATA \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_INCLASS_NO_PURE_DECLS \
-	OffworldInvader_Source_OffworldInvader_PathSequencer_h_12_ENHANCED_CONSTRUCTORS \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_PRIVATE_PROPERTY_OFFSET \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_SPARSE_DATA \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_INCLASS_NO_PURE_DECLS \
+	OffworldInvader_Source_OffworldInvader_PathSequencer_h_42_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
