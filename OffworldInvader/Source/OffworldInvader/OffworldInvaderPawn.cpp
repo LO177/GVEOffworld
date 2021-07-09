@@ -54,6 +54,8 @@ AOffworldInvaderPawn::AOffworldInvaderPawn()
 
 	CurrentXYSpeed = 0.f;
 	CurrentZSpeed = 0.f;
+
+	thrustStrifeSpeed = 50.f;
 }
 
 void AOffworldInvaderPawn::Tick(float DeltaSeconds)
@@ -217,12 +219,34 @@ void AOffworldInvaderPawn::MoveUpInput(float Val)
 	// If not turning, roll to reverse current roll value.
 	//TargetRollSpeed = NoMovementInput() ? (0.f) : (GetActorRotation().Roll * -2.f);
 
-	if(Val > 0)
-		CurrentZSpeed = 100.f;
-	else if(Val < 0)
-		CurrentZSpeed = -100.f;
-	else
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("RootComponent Z Val: %f"), RootMesh->GetRelativeLocation().Z));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Z Val: %f"), Val));
+
+	FVector cachedLocation;
+	
+	if(Val > 0 && !(RootMesh->GetRelativeLocation().Z >= 1000.f)){
+		CurrentZSpeed = thrustStrifeSpeed;
+	}
+	else if(Val > 0 && RootMesh->GetRelativeLocation().Z >= 1000.f){
+		cachedLocation.X = RootMesh->GetRelativeLocation().X;
+		cachedLocation.Y = RootMesh->GetRelativeLocation().Y;
+		cachedLocation.Z = 1000.f;
+		RootMesh->SetRelativeLocation_Direct(cachedLocation);
 		CurrentZSpeed = 0.f;
+	}
+	else if(Val < 0 && !(RootMesh->GetRelativeLocation().Z <= -1000.f)){
+		CurrentZSpeed = -thrustStrifeSpeed;
+	}
+	else if(Val < 0 && RootMesh->GetRelativeLocation().Y <= -1000.f){
+		cachedLocation.X = RootMesh->GetRelativeLocation().X;
+		cachedLocation.Y = RootMesh->GetRelativeLocation().Y;
+		cachedLocation.Z = -1000.f;
+		RootMesh->SetRelativeLocation_Direct(cachedLocation);
+		CurrentZSpeed = 0.f;
+	}
+	else{
+		CurrentZSpeed = 0.f;
+	}
 }
 
 void AOffworldInvaderPawn::MoveRightInput(float Val)
@@ -240,7 +264,7 @@ void AOffworldInvaderPawn::MoveRightInput(float Val)
 	
 	// Smoothly interpolate to target yaw speed
 	//if(PlaneMesh->GetRelativeRotation().Yaw < 45.f && PlaneMesh->GetRelativeRotation().Yaw > -45.f)
-		CurrentYawSpeed = FMath::FInterpTo(CurrentYawSpeed, TargetYawSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
+	CurrentYawSpeed = FMath::FInterpTo(CurrentYawSpeed, TargetYawSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
 	//else
 	//	CurrentYawSpeed = 0.f;
 
@@ -254,12 +278,37 @@ void AOffworldInvaderPawn::MoveRightInput(float Val)
 	// Smoothly interpolate roll speedB
 	//CurrentRollSpeed = FMath::FInterpTo(CurrentRollSpeed, TargetRollSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
 
-	if(Val > 0)
-		CurrentXYSpeed = 100.f;
-	else if(Val < 0)
-		CurrentXYSpeed = -100.f;
-	else
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("RootComponent Y Val: %f"), RootMesh->GetRelativeLocation().Y));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Y Val: %f"), Val));
+
+	FVector cachedLocation;
+
+	if(Val > 0 && !(RootMesh->GetRelativeLocation().Y >= 1000.f))
+	{
+		CurrentXYSpeed = thrustStrifeSpeed;
+	}
+	else if(Val > 0 && RootMesh->GetRelativeLocation().Y >= 1000.f)
+	{
+		cachedLocation.X = RootMesh->GetRelativeLocation().X;
+		cachedLocation.Y = 1000.f;
+		cachedLocation.Z = RootMesh->GetRelativeLocation().Z;
+		RootMesh->SetRelativeLocation_Direct(cachedLocation);
 		CurrentXYSpeed = 0.f;
+	}
+	else if(Val < 0 && !(RootMesh->GetRelativeLocation().Y <= -1000.f))
+	{
+		CurrentXYSpeed = -thrustStrifeSpeed;
+	}
+	else if (Val < 0 && RootMesh->GetRelativeLocation().Y <= -1000.f){
+		cachedLocation.X = RootMesh->GetRelativeLocation().X;
+		cachedLocation.Y = -1000.f;
+		cachedLocation.Z = RootMesh->GetRelativeLocation().Z;
+		RootMesh->SetRelativeLocation_Direct(cachedLocation);
+		CurrentXYSpeed = 0.f;
+	}
+	else{
+		CurrentXYSpeed = 0.f;
+	}
 	//(Val > 0) ? FMath::Clamp(0.0f, CurrentForwardSpeed, MaxSpeed) : FMath::Clamp(0.0f, 0.0f, 0.0f);
 }
 

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\OffworldInvader.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{9DED1DD8-CEA0-4088-A415-125AA14098DF}</UniqueIdentifier>
+      <UniqueIdentifier>{15E26F82-B611-4F27-9134-7D13DCC10120}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\OffworldInvader.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{893AB829-BCDD-4DAD-A08F-F4CA0DC402C3}</UniqueIdentifier>
+      <UniqueIdentifier>{8C939D97-0B69-4CB6-B1FF-55DA019729FA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\OffworldInvader">
-      <UniqueIdentifier>{CD16CCC4-793D-41B3-AF28-67B7C391328B}</UniqueIdentifier>
+      <UniqueIdentifier>{0208643E-C5AD-4C20-A318-1B6A5FCD28CD}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\OffworldInvader\AgileEnemyShip.cpp">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OffworldInvader\AgileEnemyShip.h">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\OffworldInvader\EnemyShip.cpp">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OffworldInvader\EnemyShip.h">
+      <Filter>Source\OffworldInvader</Filter>
+    </ClInclude>
     <None Include="..\..\Source\OffworldInvader\OffworldInvader.Build.cs">
       <Filter>Source\OffworldInvader</Filter>
     </None>

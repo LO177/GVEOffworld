@@ -50,6 +50,7 @@ protected:
 	bool NoMovementInput();
 
 	float LerpNormalise(float Val);
+	
 
 private:
 
@@ -92,6 +93,8 @@ private:
 	
 	float HorizontalDirection;
 	float VerticalDirection;
+
+	float thrustStrifeSpeed;
 
 public:
 	FORCEINLINE class UStaticMeshComponent* GetRootMesh() const { return RootMesh; }

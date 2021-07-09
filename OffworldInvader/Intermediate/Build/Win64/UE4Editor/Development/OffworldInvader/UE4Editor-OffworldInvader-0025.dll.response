@@ -34,6 +34,8 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\OffworldInvaderEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\AgileEnemyShip.cpp.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\EnemyShip.cpp.obj"
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvader.cpp.obj"
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvaderGameMode.cpp.obj"
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvaderPawn.cpp.obj"
@@ -41,6 +43,8 @@
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\SequenceNode.cpp.obj"
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\SequencePath.cpp.obj"
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\SequencerNode.cpp.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\AgileEnemyShip.gen.cpp.obj"
+"C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\EnemyShip.gen.cpp.obj"
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvader.init.gen.cpp.obj"
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvaderGameMode.gen.cpp.obj"
 "C:\Users\User\Desktop\TempFolder\GVE\Offworld JamProject\OffworldJam\OffworldInvader\GVEOffworld\OffworldInvader\Intermediate\Build\Win64\UE4Editor\Development\OffworldInvader\OffworldInvaderPawn.gen.cpp.obj"

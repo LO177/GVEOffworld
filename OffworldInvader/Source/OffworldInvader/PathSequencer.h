@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "EnemyShip.h"
+#include "AgileEnemyShip.h"
 #include "SequencePath.h"
 #include "Containers/Array.h"
 #include "PathSequencer.generated.h"
@@ -61,15 +63,47 @@ class OFFWORLDINVADER_API APathSequencer : public AActor
 	//UFUNCTION(BlueprintCallable, meta = (AllowPrivateaccess = "true"))
 	//void SequencingFunc();
 	
+	TSubclassOf<class AAgileEnemyShip> EnemyBlueprint;
+	
 public:	
 	// Sets default values for this actor's properties
 	APathSequencer();
+
+	void ConfirmVictory();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	void UpdateSequenceAmount();
+
+	void CacheCurrentSequenceData();
+	void ContinueSequence(float DeltaTime);
+	void CheckSequence();
+
+	UWorld* World;
+	
+	TArray<AEnemyShip*> EnemyShips;
+	AEnemyShip* currentEnemyShip;
+
+	float sequenceBreakInterval; // How long until the next sequence shouls start
+
+	int currentSequenceNum;
+
+	float spawnCountdownTimer;
+	float sequenceCountdownTimer;
+
+	int enemiesToSpawn;
+	int enemiesStillToSpawn;
+
+	int totalSequenceAmount;
+	int currentSequencSize;
+	
+	FVector currentSequenceStartLocation;
+	FVector currentSequenceFirstTargetLocation;
+	FVector currentSequenceEndLocation;
+
+	TArray<FVector> currentSequence;
 
 public:	
 	// Called every frame
